@@ -1,2 +1,3 @@
-# cloudnativecz.github.io
-Home page of CloudNativeCZ group
+# Cloud Native Brno
+
+Hello, friend.
