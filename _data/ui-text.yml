@@ -1078,3 +1078,48 @@ hu-HU:
 # Another locale
 # --------------
 #
+# Slovak
+# -----------------
+sk: &DEFAULT_CZ
+  page                       : "Stránka"
+  pagination_previous        : "Předchozí"
+  pagination_next            : "Další"
+  breadcrumb_home_label      : "Domů"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Menu"
+  toc_label                  : "Obsah"
+  ext_link_label             : "Odkaz"
+  less_than                  : "méně než"
+  minute_read                : "min"
+  share_on_label             : "Sdílej na"
+  meta_label                 :
+  tags_label                 : "Tagy:"
+  categories_label           : "Kategorie:"
+  date_label                 : "Aktualizované:"
+  comments_label             : "Komentář"
+  comments_title             : "Komentáře"
+  more_label                 : "Více"
+  related_label              : "Podobné články"
+  follow_label               : "Sleduj:"
+  feed_label                 : "Feed"
+  powered_by                 : "Stránka vytvořena pomocí"
+  website_label              : "Web"
+  email_label                : "Email"
+  recent_posts               : "Nejnovější příspěvky"
+  undefined_wpm              : "Nedefinovaný parameter words_per_minute v _config.yml"
+  comment_form_info          : "Tvoje emailová adresa nebude publikována. Vyžadované pole jsou zvýrazněné."
+  comment_form_comment_label : "Komentář"
+  comment_form_md_info       : "Markdown je podporovaný."
+  comment_form_name_label    : "Jméno"
+  comment_form_email_label   : "Emailová adresa"
+  comment_form_website_label : "Webstránka (voliteľné)"
+  comment_btn_submit         : "Vlož komentář"
+  comment_btn_submitted      : "Vloženo"
+  comment_success_msg        : "Díky za Tvůj komentář! Po schválení bude zobrazen na stránce."
+  comment_error_msg          : "Omlouváme se, při ukládání nastala chyba. Vyplnil jsi všechny pole? Pokud ano, zkus to znovu."
+  loading_label              : "Načítá se..."
+  search_placeholder_text    : "Zadej hledaný výraz..."
+  results_found              : "Nalezno výsledků"
+  back_to_top                : "Na začátek"
+cs-CZ:
+  <<: *DEFAULT_CZ
