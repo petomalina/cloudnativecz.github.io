@@ -11,15 +11,15 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "cs-CZ"
 title                    : "Cloud Native CZ"
 title_separator          : "-"
 name                     : "Petr Kotas"
-description              : "Vše o cloud native technologiích co jste chtěli vědět."
+description              : "Vše o cloudových technologiích co jste chtěli vědět."
 url                      : http://cloudnative.cz# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : / # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -75,6 +75,11 @@ bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
 
+collections:
+  events:
+    output: true
+    permalink: /:collection/:path/
+
 # Social Sharing
 twitter:
   username               :
@@ -105,7 +110,7 @@ author:
   bio              : ""
   location         : "Internet a tak"
   email            : petr.kotas@gmail.com
-  uri              : kotas.tech
+  uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
@@ -119,7 +124,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : petrkotas# "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : petrkotas # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
@@ -136,6 +141,7 @@ author:
 include:
   - .htaccess
   - _pages
+  - _events
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -269,3 +275,14 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _events
+  - scope:
+      path: ""
+      type: events
+    values:
+      layout: event
+      author_profile: false
+      read_time: false
+      comments: false
+      share: true
+      related: false
