@@ -15,7 +15,34 @@ layout: default
 {% endif %}
 
 <div id="main" role="main">
-  {% include sidebar.html %}
+
+  <div class="sidebar sticky">
+    {% if page.event_date %}
+      <h3>Datum</h3>
+      {{ page.event_date | date_to_string }}
+    {% endif %}
+    {% if page.event_time %}
+      <h3>Čas</h3>
+      {{ page.event_time }}
+    {% endif %}
+    {% if page.event_place %}
+      <h3>Místo</h3>
+      {{ page.event_place.label }}
+      <iframe
+        src="{{ page.event_place.url }}"
+        width="250"
+        height="250"
+        frameborder="0"
+        style="border:0"
+        >
+      </iframe>
+    {% endif %}
+    <h3>Odkazy</h3>
+    <p>
+      <a href="https://meetup.com/Cloud-Native-Brno/events/{{ page.event_meetup }}" class="btn btn--meetup" ><i class="fab fa-fw fa-meetup" style="font-size:24px;" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/events/{{ page.event_facebook }}/" class="btn btn--facebook"><i class="fab fa-fw fa-facebook" style="font-size:24px;" aria-hidden="true"></i></a>
+    </p>
+  </div>
 
   <article class="page" itemscope itemtype="http://schema.org/Event">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
