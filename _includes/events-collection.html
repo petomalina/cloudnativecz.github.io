@@ -1,0 +1,19 @@
+{% assign entries = site[include.collection] %}
+{% assign entries = entries | sort: 'date' | reverse %}
+{% capture nowunix %}{{site.time | date: '%s'}}{% endcapture %}
+
+{% if include.future %}
+  {%- for post in entries -%}
+    {% capture postunix %}{{post.event_date | date: '%s'}}{% endcapture %}
+    {% if postunix >= nowunix %}
+      {% include archive-event.html %}
+    {% endif %}
+  {%- endfor -%}
+{% else %}
+  {%- for post in entries -%}
+    {% capture postunix %}{{post.event_date | date: '%s'}}{% endcapture %}
+    {% if postunix < nowunix %}
+      {% include archive-event.html %}
+    {% endif %}
+  {%- endfor -%}
+{% endif %}

@@ -145,6 +145,7 @@ include:
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
+  - "*.vscode"
   - vendor
   - .asset-cache
   - .bundle

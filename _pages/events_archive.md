@@ -1,6 +1,6 @@
 ---
 title: Akce
-layout: collection
+layout: event-collection
 permalink: /events/
 collection: events
 entries_layout: grid
