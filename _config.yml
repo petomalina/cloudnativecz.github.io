@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "cs-CZ"
-title                    : "Cloud Native CZ"
+title                    : "Cloud Native"
 title_separator          : "-"
 name                     : "Petr Kotas"
 description              : "Vše o cloudových technologiích co jste chtěli vědět."
