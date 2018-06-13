@@ -1,12 +1,12 @@
 # main links
 main:
   - title: "O nás"
-    url: /
+    url: /#about_us
   - title: "Tým"
     url: /
   - title: "Akce"
     url: /events/
   - title: "Blog"
-    url: /blog-archive/
+    url: /blog/
 
 
