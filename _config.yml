@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "cs-CZ"
-title                    : "Cloud Native"
+title                    : "Cloud Native Czechia"
 title_separator          : "-"
 name                     : "Petr Kotas"
 description              : "Vše o cloudových technologiích co jste chtěli vědět."
-url                      : http://cloudnative.cz# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : http://cloudnative.cz # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : / # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -84,15 +84,19 @@ collections:
 twitter:
   username               :
 facebook:
-  username               :
+  username               : cloudnativeczechia
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
+github:
+  username               : CloudNativeCZ
+meetup:
+  username               : Cloud-Native-Brno
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : Organisation # Person or Organization (defaults to Person)
+  name                   : Cloud Native Czechia # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
 # Analytics
@@ -106,34 +110,22 @@ analytics:
 # Site Author
 author:
   name             : "Petr Kotas"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : ""
+  avatar           : /assets/images/authors/petrk.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Miluju věci stavět a budovat"
   location         : "Internet a tak"
   email            : petr.kotas@gmail.com
-  uri              :
+  uri              : "https://kotas.tech"
+  role             : "founder"
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
-  github           :
+  github           : petrkotas
   gitlab           :
   google_plus      :
-  keybase          :
-  instagram        :
-  lastfm           :
   linkedin         : petrkotas # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
-  pinterest        :
-  soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
-  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
-  tumblr           :
   twitter          :
-  vine             :
-  weibo            :
-  xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
 
 

@@ -1,40 +1,77 @@
-{% assign author = page.author | default: page.authors[0] | default: site.author %}
-{% assign author = site.data.authors[author] | default: author %}
-
-<figure class="snip1559">
-  <div class="profile-image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample2.jpg" alt="profile-sample2" /></div>
-  <figcaption>
-    <h3>Sue Shei</h3>
-    <h5>Founder</h5>
-    <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
-    <div class="icons"><a href="#"><i class="ion-social-reddit"></i></a>
-      <a href="#"> <i class="ion-social-twitter"></i></a>
-      <a href="#"> <i class="ion-social-vimeo"></i></a>
-    </div>
-  </figcaption>
-</figure>
-<figure class="snip1559">
-  <div class="profile-image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample7.jpg" alt="profile-sample7" /></div>
-  <figcaption>
-    <h3>Will Barrow</h3>
-    <h5>Web Designer</h5>
-    <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
-    <div class="icons"><a href="#"><i class="ion-social-reddit"></i></a>
-      <a href="#"> <i class="ion-social-twitter"></i></a>
-      <a href="#"> <i class="ion-social-vimeo"></i></a>
-    </div>
-  </figcaption>
-</figure>
-<figure class="snip1559">
-  <div class="profile-image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg" alt="profile-sample6" /></div>
-  <figcaption>
-    <h3>Indigo Violet</h3>
-    <h5>Public Relations</h5>
-    <p>The only skills I have the patience to learn are those that have no real application in life. </p>
-    <div class="icons"><a href="#"><i class="ion-social-reddit"></i></a>
-      <a href="#"> <i class="ion-social-twitter"></i></a>
-      <a href="#"> <i class="ion-social-vimeo"></i></a>
-    </div>
-  </figcaption>
-</figure>
-
+<figure class="author-box">
+    <div itemscope itemtype="http://schema.org/Person">
+      <div class="profile-image">
+        {% if author.avatar %}
+          {% if author.avatar contains "://" %}
+            {% assign author_src = author.avatar %}
+          {% else %}
+            {% assign author_src = author.avatar | relative_url %}
+          {% endif %}
+        {% else %}
+          {% assign author_src = "/assets/images/authors/anonym.svg" %}
+        {% endif %}
+          <img src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">
+      </div>
+      <figcaption>
+        <div>
+          <h3 itemprop="name">{{ author.name }}</h3>
+          <h5> {{ author.role }} </h5>
+          {% if author.bio %}
+            <p class="author__bio" itemprop="description">
+              {{ author.bio }}
+            </p>
+          {% endif %}
+        </div>
+        <div class="icons">
+          <div class="social-icons">
+            {% if author.uri %}
+              <a href="{{ author.uri }}" itemprop="url"><i class="fas fa-fw fa-link" aria-hidden="true"></i></a>
+            {% endif %}
+            {% if author.email %}
+              <a href="mailto:{{ author.email }}"><meta itemprop="email" content="{{ author.email }}" /><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i></a>
+            {% endif %}
+            {% if author.twitter %}
+              <a href="https://twitter.com/{{ author.twitter }}" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i></a>
+            {% endif %}
+            {% if author.facebook %}
+              <a href="https://www.facebook.com/{{ author.facebook }}" itemprop="sameAs"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i></a>
+            {% endif %}
+            {% if author.google_plus %}
+              <a href="https://plus.google.com/{{ author.google_plus }}" itemprop="sameAs"><i class="fab fa-fw fa-google-plus-square" aria-hidden="true"></i></a>
+            {% endif %}
+            {% if author.linkedin %}
+              <a href="https://www.linkedin.com/in/{{ author.linkedin }}" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i></a>
+            {% endif %}
+            {% if author.tumblr %}
+              <a href="https://{{ author.tumblr }}.tumblr.com" itemprop="sameAs"><i class="fab fa-fw fa-tumblr-square" aria-hidden="true"></i></a>
+            {% endif %}
+            {% if author.bitbucket %}
+              <a href="https://bitbucket.org/{{ author.bitbucket }}" itemprop="sameAs"><i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i></a>
+            {% endif %}
+            {% if author.github %}
+              <a href="https://github.com/{{ author.github }}" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>
+            {% endif %}
+            {% if author.gitlab %}
+              <a href="https://gitlab.com/{{ author.gitlab }}" itemprop="sameAs"><i class="fab fa-fw fa-gitlab" aria-hidden="true"></i></a>
+            {% endif %}
+            {% if author.stackoverflow %}
+              <a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}" itemprop="sameAs"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i></a>
+            {% endif %}
+            {% if author.dribbble %}
+              <a href="https://dribbble.com/{{ author.dribbble }}" itemprop="sameAs"><i class="fab fa-fw fa-dribbble" aria-hidden="true"></i></a>
+            {% endif %}
+            {% if author.youtube %}
+              {% if author.youtube contains "://" %}
+                <a href="{{ author.youtube }}" itemprop="sameAs"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i></a>
+              {% else author.youtube %}
+                <a href="https://www.youtube.com/user/{{ author.youtube }}" itemprop="sameAs"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i></a>
+              {% endif %}
+            {% endif %}
+            {% if author.codepen %}
+              <a href="https://codepen.io/{{ author.codepen }}" itemprop="sameAs"><i class="fab fa-fw fa-codepen" aria-hidden="true"></i></a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </figcaption>
+  </figure>

@@ -3,7 +3,7 @@ main:
   - title: "O nás"
     url: /#about_us
   - title: "Tým"
-    url: /
+    url: /#team
   - title: "Akce"
     url: /events/
   - title: "Blog"

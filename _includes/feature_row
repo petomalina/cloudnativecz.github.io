@@ -4,7 +4,7 @@
   {% assign feature_row = page.feature_row %}
 {% endif %}
 
-<div class="feature__wrapper">
+<div class="feature__wrapper" id="{{ include.id }}">
 
   {% for f in feature_row %}
 
@@ -41,10 +41,9 @@
               {{ f.excerpt | markdownify }}
             </div>
           {% endif %}
-
-          {% if f.url %}
-            <p><a href="{{ f_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
-          {% endif %}
+            {% if f.url %}
+              <p><a href="{{ f_url }}"></a></p>
+            {% endif %}
         </div>
       </div>
     </div>

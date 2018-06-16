@@ -9,3 +9,12 @@ Petr Kotas:
   twitter     : "petrkotas"
   linkedin    : "petrkotas"
   github      : "petrkotas"
+  role        : "founder"
+
+Petr Horacek:
+  name        : "Petr Horáček"
+  uri         : "http://blog.phoracek.cz/"
+  email       : "phoracek@redhat.com"
+  bio         : "Vapování to je moje. Jo a taky rád kódím."
+  role        : "networking guy"
+
