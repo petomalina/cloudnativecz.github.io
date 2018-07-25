@@ -1,6 +1,6 @@
 ---
 title: "Meetup #5"
-excerpt: Meetup věnovaný Monitoringu a síťím
+excerpt: Meetup věnovaný Monitoringu a sítím
 event_date: 23.8.2018
 event_time: "18:00"
 event_place: 
