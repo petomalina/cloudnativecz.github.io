@@ -4,14 +4,14 @@ layout: archive
 
 {{ content }}
 
-<h2 style="clear: both">Nadcházející akce</h2>
+<h2 style="clear: both">Upcoming events</h2>
 <div class="entries-{{ page.entries_layout }}">
   {% include events-collection.html collection=page.collection future=true type=page.entries_layout %}
 </div>
 
 <hr style="clear: both">
 
-<h2 style="clear: both">Předchozí akce</h2>
+<h2 style="clear: both">Past events</h2>
 <div class="entries-{{ page.entries_layout }}">
   {% include events-collection.html collection=page.collection future=false type=page.entries_layout %}
 </div>

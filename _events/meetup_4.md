@@ -1,6 +1,6 @@
 ---
 title: "Meetup #4"
-excerpt: Třetí meetup zaměřený na Kubernetes
+excerpt: 4th meetup about real-life experiences with cloud-native applicaitons.
 event_date: 24.7.2018
 event_time: "18:00"
 event_place: 
