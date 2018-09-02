@@ -20,3 +20,12 @@ Petr Horacek:
   role        : "networking guy"
   avatar      : "/assets/images/authors/petrh.jpg"
 
+Robert Zahradnicek:
+  name        : "Robert Zahradnicek"
+  email       : "rzahradnicek@gmail.com"
+  bio         : "Techie, curious explorer and perfectionist."
+  avatar      : "/assets/images/authors/robertz.jpg"
+  linkedin    : "robertzahradnicek"
+  github      : "b0urn3"
+  role        : "co-founder and devops guy"
+
