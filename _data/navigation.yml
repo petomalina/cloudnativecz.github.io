@@ -1,10 +1,10 @@
 # main links
 main:
-  - title: "O nás"
+  - title: "About us"
     url: /#about_us
-  - title: "Tým"
+  - title: "Team"
     url: /#team
-  - title: "Akce"
+  - title: "Events"
     url: /events/
   - title: "Blog"
     url: /blog/
