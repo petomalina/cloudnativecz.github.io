@@ -1,5 +1,5 @@
 <div class="feature__wrapper" id="team">
-  <h2 class="archive__item-title">Náš tým</h2>
+  <h2 class="archive__item-title">Team</h2>
   {% for authora in site.data.authors %}
     {% assign author = site.data.authors[authora.first] %}
     {% include author-card.html %}
