@@ -4,7 +4,7 @@ Petr Kotas:
   name        : "Petr Kotas"
   uri         : "https://kotas.tech"
   email       : "petr.kotas@gmail.com"
-  bio         : "Miluji techniku, rád buduju a ze všeho nejraději jsem mezi lidmi."
+  bio         : "Tech lover, tinker and people person."
   avatar      : "/assets/images/authors/petrk.jpg"
   twitter     : "petrkotas"
   linkedin    : "petrkotas"
@@ -16,7 +16,16 @@ Petr Horacek:
   uri         : "http://blog.phoracek.cz/"
   email       : "phoracek@redhat.com"
   github      : "phoracek"
-  bio         : "Rád programuju, hraju videohry a trávím večery s kamarády. Nerd."
+  bio         : "Like to write code, play video-games and spending evenings with my friends. Nerd."
   role        : "networking guy"
   avatar      : "/assets/images/authors/petrh.jpg"
+
+Robert Zahradnicek:
+  name        : "Robert Zahradnicek"
+  email       : "rzahradnicek@gmail.com"
+  bio         : "Techie, curious explorer and perfectionist."
+  avatar      : "/assets/images/authors/robertz.jpg"
+  linkedin    : "robertzahradnicek"
+  github      : "b0urn3"
+  role        : "co-founder and devops guy"
 
