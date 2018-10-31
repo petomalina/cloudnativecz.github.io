@@ -1,5 +1,5 @@
 ---
-title: "Meetup #6"
+title: "Meetup #8"
 excerpt: This meetup is dedicated to explanation of Istio and OpenTracing.
 event_date: 28.11.2018
 event_time: "18:00"
