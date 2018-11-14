@@ -4,7 +4,7 @@ Petr Kotas:
   name        : "Petr Kotas"
   uri         : "https://kotas.tech"
   email       : "petr.kotas@gmail.com"
-  bio         : "Tech lover, tinker and people person."
+  bio         : "Tech lover, tinkerer and a people person."
   avatar      : "/assets/images/authors/petrk.jpg"
   twitter     : "petrkotas"
   linkedin    : "petrkotas"
@@ -16,7 +16,7 @@ Petr Horacek:
   uri         : "http://blog.phoracek.cz/"
   email       : "phoracek@redhat.com"
   github      : "phoracek"
-  bio         : "Like to write code, play video-games and spending evenings with my friends. Nerd."
+  bio         : "Likes to write code, play video-games and spending evenings with friends. Nerd."
   role        : "networking guy"
   avatar      : "/assets/images/authors/petrh.jpg"
 
