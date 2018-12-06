@@ -10,7 +10,7 @@ event_meetup: 257007870
 event_facebook: 285964962032894
 ---
 
-!!! We will be in dance hall of Palecel. It is upstairs, isolated of the pub downstairs. !!!
+!!! We will be in dance hall of Palecek. It is upstairs, isolated of the pub downstairs. !!!
 
 The doors open at 18:00
 
@@ -23,7 +23,7 @@ topics are:
 * best new hype,
 * hands on.
 
-Besides lightning talks, this meetup theme is netwroking and
+Besides lightning talks, this meetup theme is networking and
 knowledge sharing. 
 
 To have the discussion going on smoothly, we will provide
