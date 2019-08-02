@@ -11,15 +11,6 @@ Petr Kotas:
   github      : "petrkotas"
   role        : "founder"
 
-Petr Horacek:
-  name        : "Petr Horáček"
-  uri         : "http://blog.phoracek.cz/"
-  email       : "phoracek@redhat.com"
-  github      : "phoracek"
-  bio         : "Likes to write code, play video-games and spending evenings with friends. Nerd."
-  role        : "networking guy"
-  avatar      : "/assets/images/authors/petrh.jpg"
-
 Robert Zahradnicek:
   name        : "Robert Zahradnicek"
   email       : "rzahradnicek@gmail.com"
