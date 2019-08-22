@@ -5,7 +5,7 @@ main:
   - title: "Team"
     url: /#team
   - title: "Events"
-    url: /events/
+    url: /event-calendar/
   - title: "Blog"
     url: /blog/
 
