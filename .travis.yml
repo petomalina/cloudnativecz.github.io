@@ -19,12 +19,12 @@ env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
-#deploy:
-#  provider: script
-#  local-dir: _build
-#  script: find . -type d \( -path "./.*" -o -path "./_build" \) -prune -o -name "*" -print -exec curl --ftp-create-dirs -T {} ftp://cloudnative.cz/cloudnative.cz/ --user ${FTP_USER}:${FTP_PASS} \;
-#  skip-cleanup: true
-#  keep-history: true
-#  verbose: true
-#  on:
-#    branch: master
+deploy:
+  provider: script
+  local-dir: _build
+  script: find ./_build -type d \( -path "./.*" \) -prune -o -name "*" -print -exec curl --ftp-create-dirs -T {} ftp://hosting.subreg.cz/cloudnative.cz/ --user ${FTP_USER}:${FTP_PASS} \;
+  skip-cleanup: true
+  keep-history: true
+  verbose: true
+  on:
+    branch: master
