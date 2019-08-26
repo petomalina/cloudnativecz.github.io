@@ -13,7 +13,7 @@ script: jekyll build --destination _build
 # branch whitelist, only for GitHub Pages
 branches:
   only:
-    - master     # test the gh-pages branch
+    - travisci-deploy     # test the gh-pages branch
 
 env:
   global:
