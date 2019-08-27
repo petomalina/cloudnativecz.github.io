@@ -20,8 +20,8 @@ env:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
 before_deploy:
-  - apt-get update
-  - apt-get install wput
+  - sudo apt-get update
+  - sudo apt-get install wput -y
 
 deploy:
   provider: script
