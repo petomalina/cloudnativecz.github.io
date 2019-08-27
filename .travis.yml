@@ -19,10 +19,14 @@ env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
+before_deploy:
+  - apt-get update
+  - apt-get install wput
+
 deploy:
   provider: script
   local-dir: _build
-  script: find ./_build -type f -exec curl -v --ftp-create-dirs -T {} ftp://hosting.subreg.cz/cloudnative.cz/{} --user ${FTP_USER}:${FTP_PASS} \;
+  script: wput --basename="./_build" -u ./_build/* ftp://${FTP_USER}:${FTP_PASS}@hosting.subreg.cz/cloudnative.cz/
   skip-cleanup: true
   keep-history: true
   verbose: true
