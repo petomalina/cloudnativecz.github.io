@@ -22,7 +22,7 @@ env:
 deploy:
   provider: script
   local-dir: _build
-  script: find . -type f -exec echo {} \;
+  script: find ./_build -type f -exec echo {} \;
   skip-cleanup: true
   keep-history: true
   verbose: true
