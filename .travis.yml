@@ -22,7 +22,7 @@ env:
 deploy:
   provider: script
   local-dir: _build
-  script: find ./_build -type f -exec echo {} \;
+  script: find ./_build -type f -exec curl --ftp-create-dirs -T {} ftp://hosting.subreg.cz/cloudnative.cz/{} --user ${FTP_USER}:${FTP_PASS} \;
   skip-cleanup: true
   keep-history: true
   verbose: true
