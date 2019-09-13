@@ -1,11 +1,32 @@
+sudo: false
 language: ruby
 cache: bundler
-gemfile: docs/Gemfile
-script:
-  - bundle exec jekyll algolia --source docs --destination docs/_site --config docs/_config.yml
+rvm:
+  - 2.4.2
+
+install:
+  # Install Jekyll and dependencies
+  - bundle install
+
+
+script: jekyll build --destination _build
+
+# branch whitelist, only for GitHub Pages
 branches:
   only:
-    # Change this to gh-pages if you're deploying using the gh-pages branch
-    - master
-rvm:
- - 2.4
+    - master     # test the gh-pages branch
+
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+deploy:
+  provider: pages
+  local-dir: _build
+  fqdn: cloudnative.cz
+  github-token: $GITHUB_TOKEN
+  skip-cleanup: true
+  keep-history: true
+  verbose: true
+  on:
+    branch: master
