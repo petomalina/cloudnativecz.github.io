@@ -20,13 +20,13 @@ env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
-deploy:
-  provider: pages
-  local-dir: _build
-  fqdn: cloudnative.cz
-  github-token: $GITHUB_TOKEN
-  skip-cleanup: true
-  keep-history: true
-  verbose: true
-  on:
-    branch: master
+# deploy:
+#   provider: pages
+#   local-dir: _build
+#   fqdn: cloudnative.cz
+#   github-token: $GITHUB_TOKEN
+#   skip-cleanup: true
+#   keep-history: true
+#   verbose: true
+#   on:
+#     branch: master
