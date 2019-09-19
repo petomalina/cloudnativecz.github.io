@@ -20,3 +20,12 @@ Robert Zahradnicek:
   github      : "b0urn3"
   role        : "co-founder and devops guy"
 
+Peter Malina:
+  name        : "Peter Malina"
+  email       : "peter.malina@flowup.cz"
+  bio:        : "Cloud enthusiast, Gopher, CTO @flowup."
+  avatar      : "/assets/images/authors/petom.jpg"
+  twitter     : "petomalina"
+  linkedin    : "petomalina"
+  github      : "petomalina"
+  role        : "co-founder"
